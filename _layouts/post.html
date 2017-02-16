@@ -10,15 +10,6 @@ layout: default
           
         <div id="fb-root"></div>
         
-        <script>
-           (function(d, s, id) {
-           var js, fjs = d.getElementsByTagName(s)[0];
-           if (d.getElementById(id)) return;
-           js = d.createElement(s); js.id = id;
-           js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8";
-           fjs.parentNode.insertBefore(js, fjs);
-           }(document, 'script', 'facebook-jssdk'));
-        </script>
         
         <section class="post-content">
             {{ content }}
@@ -37,7 +28,11 @@ layout: default
         
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         
-        
+        <!-- Place this tag in your head or just before your close body tag. -->
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+         <!-- Place this tag where you want the share button to render. -->
+         <div class="g-plus" data-action="share"></div>
         <footer>
             {% if page.previous %}
             <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
