@@ -22,17 +22,18 @@ layout: default
             <div class="share-widget">
   <a href="https://www.facebook.com/sharer.php?u={{ site.url }}/{{ page.url }}&title={{ page.title }}" title="Share on Facebook" target="_blank">Share on Facebook</a>
 </div>
-    
+     
+            <!-- Place this tag in your head or just before your close body tag. -->
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+
+<!-- Place this tag where you want the share button to render. -->
+<div class="g-plus" data-action="share" data-height="24"></div>
+            
             <a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>
         </div>
         
         <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
         
-        <!-- Place this tag in your head or just before your close body tag. -->
-        <script src="https://apis.google.com/js/platform.js" async defer></script>
-
-         <!-- Place this tag where you want the share button to render. -->
-         <div class="g-plus" data-action="share"></div>
         <footer>
             {% if page.previous %}
             <a href="{{ page.previous.url }}" class="float-left">&larr; Previous post</a> {% endif %}
